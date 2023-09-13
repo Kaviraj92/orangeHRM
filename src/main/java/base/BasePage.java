@@ -76,8 +76,8 @@ public class BasePage {
 		
 		driver.get(prop.getProperty("URL"));
 		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(80));
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(90));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(70));
 	
 	}
